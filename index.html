@@ -1,79 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Official site of Kaiden Jones — British philosopher, independent researcher, and author of 2938: Atlantis and Half-Silvering Dimensions." />
-    <meta name="keywords" content="Kaiden Jones, philosopher, author, 2938 Atlantis, Half-Silvering Dimensions, independent researcher, metaphysics, AI philosophy" />
-    <meta property="og:title" content="Kaiden Jones - Philosopher, Author, Researcher" />
-    <meta property="og:description" content="British philosopher and author exploring metaphysics, AI, and spiritual philosophy." />
-    <meta property="og:image" content="https://imghost.online/ib/GasKFdBPLK0GpEb_1754517800.jpg" />
-    <meta property="og:url" content="https://kaiden.uk" />
-    <meta property="og:type" content="website" />
-    <title>Kaiden Jones - About Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papNM3d+N3Xbz8zSxtP5E4Q5IqFZ9m9N9t3pZP4FZ6Xg8nK+4QZ1q1S2JhS9oKURl2CmjXt6dGTThASdnAOmZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0c0c0c; color: #fff; scroll-behavior: smooth; }
-        header, footer { background-color: #1a1a1a; padding: 1rem; text-align: center; }
-        header h1 { margin: 0; }
-        section { padding: 2rem; max-width: 1000px; margin: auto; }
-        img.profile { max-width: 200px; border-radius: 10px; display: block; margin: 1rem auto; }
-        .portfolio { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
-        .portfolio-item { text-align: center; max-width: 300px; }
-        .portfolio-item img { width: 100%; border-radius: 8px; }
-        .button-link { display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background: #444; color: #fff; text-decoration: none; border-radius: 5px; }
-        .button-link:hover { background: #666; }
-        .testimonials { background-color: #111; padding: 2rem; border-radius: 10px; margin-top: 2rem; }
-        footer a { color: #ccc; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaiden Jones — Researcher, Author & Creator</title>
+  <meta name="description" content="Kaiden Jones is a British independent researcher, author, and creator. Projects include Half-Silvering Dimensions and the novel 2938: Atlantis." />
+  <meta name="color-scheme" content="dark light" />
+  <meta property="og:title" content="Kaiden Jones — Researcher, Author & Creator" />
+  <meta property="og:description" content="Independent researcher and author. Projects include Half-Silvering Dimensions and 2938: Atlantis." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <style>
+    :root{
+      --bg:#0b0b0c;--panel:#121214;--ink:#f6f7f9;--muted:#c7c9d1;--accent:#7ad8ff;--ring:rgba(122,216,255,.35);
+    }
+    html,body{height:100%}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);} 
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:linear-gradient(180deg,rgba(11,11,12,.9),rgba(11,11,12,.7) 60%,rgba(11,11,12,0));z-index:10;border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{display:flex;align-items:center;gap:1rem;padding:0.8rem 0}
+    nav a{color:var(--muted);text-decoration:none;padding:.4rem .6rem;border-radius:10px}
+    nav a:hover, nav a:focus{outline:none;color:var(--ink);background:rgba(255,255,255,.06);box-shadow:0 0 0 3px var(--ring)}
+    .brand{margin-right:auto;font-weight:700;color:var(--ink)}
+
+    .hero{padding:clamp(3rem,6vw,6rem) 0}
+    .hero h1{font-size:clamp(1.8rem,1.2rem + 3vw,3.2rem);line-height:1.15;margin:0 0 .5rem}
+    .hero p{color:var(--muted);max-width:64ch;margin:0}
+
+    .grid{display:grid;gap:1rem}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .card .pad{padding:1rem}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
+    .muted{color:var(--muted)}
+
+    figure{margin:0}
+    img{max-width:100%;display:block;height:auto;border-radius:20px}
+    .badge{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .6rem;border-radius:999px;background:rgba(255,255,255,.06);color:var(--ink);font-size:.85rem;border:1px solid rgba(255,255,255,.08)}
+
+    .section{padding:clamp(2rem,4vw,3rem) 0}
+    h2{font-size:clamp(1.4rem,1rem + 1.6vw,2rem);margin:0 0 .8rem}
+
+    .footer{padding:2rem 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
+    .cta{display:inline-block;margin-top:.75rem;padding:.7rem 1rem;border-radius:12px;background:#1a7ed9;color:#fff;text-decoration:none}
+    .cta:hover{filter:brightness(1.1)}
+    .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Kaiden Jones</h1>
-        <p>Philosopher • Author • Independent Researcher</p>
-    </header>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="brand">Kaiden Jones</div>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-        <h2 style="text-align:center">About Me</h2>
-        <img src="https://imghost.online/ib/GasKFdBPLK0GpEb_1754517800.jpg" alt="Kaiden Jones" class="profile" />
-        <p style="text-align:center">Hello there. I'm Kaiden Jones. My academic journey has led me to the fascinating field of metaphysics &amp; computer science. I’m captivated by the world of Artificial Intelligence and its potential to reshape our understanding of existence. My research explores the intersection of AI and divinity—philosophical and spiritual implications of increasingly sophisticated technologies.</p>
-    </section>
-
-    <section>
-        <h2 style="text-align:center">Portfolio</h2>
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <img src="https://imghost.online/ib/EYrrDzdl3MMd2gn_1754517800.jpg" alt="2938 Atlantis">
-                <a class="button-link" href="https://www.smashwords.com/books/view/1125239" target="_blank">2938: Atlantis</a>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://imghost.online/ib/LT5z4Zorktdu7bJ_1754517800.jpg" alt="Half-Silvering Dimensions">
-                <a class="button-link" href="https://journalofscience.org/index.php/GJSFR/article/view/102840" target="_blank">Half-Silvering Dimensions</a>
-                <a class="button-link" href="https://www.preprints.org/manuscript/202507.2550/v1" target="_blank">Formal Expansion Paper</a>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container grid cols-2" style="align-items:center;gap:clamp(1rem,3vw,2rem)">
+        <div>
+          <span class="badge" aria-hidden="true">Independent researcher · Author · Creator</span>
+          <h1>Kaiden Jones</h1>
+          <p>British independent researcher and author. I formalise clear, testable models in logic and systems theory, and write fiction exploring science and memory. Projects include <em>Half-Silvering Dimensions</em> and the novel <em>2938: Atlantis</em>.</p>
+          <a class="cta" href="#work">See selected work</a>
         </div>
+        <figure class="card">
+          <img src="https://i.imgur.com/OIbgojn.png" alt="Collage showing awards and organisations worked with, including Engage, King's Trust, Wirral, and Liverpool Hope University." />
+        </figure>
+      </div>
     </section>
 
-    <section>
-        <h2 style="text-align:center">Find Me On</h2>
-        <p style="text-align:center">
-            <a class="button-link" href="https://scholar.google.com/citations?user=HQ0S9yAAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a class="button-link" href="https://orcid.org/0009-0008-1070-7073" target="_blank">ORCID</a>
-            <a class="button-link" href="https://www.wikidata.org/wiki/Q135332949" target="_blank">Wikidata</a>
-        </p>
+    <section id="about" class="section">
+      <div class="container grid cols-2">
+        <div class="card"><div class="pad">
+          <h2>About</h2>
+          <p>I prefer accessible, well-structured writing over jargon. My work focuses on building rigorous logical scaffolding first, then exploring applications across disciplines. I collaborate with education and community partners across the North West to support care-experienced young people and to share research in plain English.</p>
+        </div></div>
+        <div class="card"><div class="pad">
+          <h3>Highlights</h3>
+          <ul>
+            <li>Author of <em>2938: Atlantis</em>.</li>
+            <li>Formal development of <em>Half-Silvering Dimensions</em>.</li>
+            <li>Engage in their Future — Winner 2019.</li>
+          </ul>
+        </div></div>
+      </div>
     </section>
 
-    <section class="testimonials">
-        <h2 style="text-align:center">What People Say</h2>
-        <blockquote style="text-align:center">
-            <p><strong>Dan Freedman:</strong> “I just wanted to tell you how deeply impressed I am with 2938 Atlantis. The thought, care, work and dedication are clearly evident. It’s arresting, exciting, challenging, thought-provoking and enjoyable.”</p>
-        </blockquote>
+    <section id="work" class="section">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <div class="grid cols-2">
+          <article class="card"><div class="pad">
+            <h3>Half-Silvering Dimensions</h3>
+            <p class="muted">A formal expansion of directional observation logic in layered systems. Built with explicit truth tables, symbolic rules, and simulations.</p>
+            <a class="cta" href="https://journalofscience.org/index.php/GJSFR/article/view/102840" target="_blank" rel="noopener">Read the original paper</a>
+            <a class="cta" href="https://www.preprints.org/manuscript/202507.2550/v1" target="_blank" rel="noopener">Read the extended study</a>
+          </div></article>
+          <article class="card"><div class="pad">
+            <h3>2938: Atlantis</h3>
+            <p class="muted">Science-fiction novel exploring memory, identity, and responsibility through a near-future lens.</p>
+            <a class="cta" href="https://www.smashwords.com/books/view/1125239" target="_blank" rel="noopener">View on Smashwords</a>
+          </div></article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>Email: <a href="mailto:contact@kaiden.uk">contact@kaiden.uk</a></p>
-        <p>&copy; 2025 <a href="https://kaiden.uk">kaiden.uk</a></p>
-    </footer>
+    <section id="awards" class="section">
+      <div class="container">
+        <h2>Awards & Partnerships</h2>
+        <div class="card"><div class="pad">
+          <p class="muted">Recent collaborations include King’s Trust, Wirral Council, and Liverpool Hope University.</p>
+          <figure>
+            <img src="https://i.imgur.com/OIbgojn.png" alt="Awards and partnerships collage: Engage, King’s Trust, Wirral, Liverpool Hope University." />
+            <figcaption class="sr-only">Awards and partnerships collage</figcaption>
+          </figure>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container grid cols-2">
+        <div class="card"><div class="pad">
+          <h2>Contact</h2>
+          <p class="muted">For research, talks, or collaboration enquiries, send a message. I aim to reply within a few days.</p>
+          <p>Email: <a href="mailto:contact@kaiden.uk">contact@kaiden.uk</a></p>
+        </div></div>
+        <div class="card"><div class="pad">
+          <h3>Press Kit</h3>
+          <p class="muted">Bio, headshots, and project summaries available on request.</p>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Kaiden Jones. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
